@@ -1,80 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Draw a Perfect Circle - Rufine</title>
-<style>
-    html, body {
-        margin: 0;
-        padding: 0;
-        background-color: black;
-        color: white;
-        height: 100%;
-        width: 100%;
-        font-family: Arial, sans-serif;
-        overflow: hidden;
-    }
-    canvas {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    #top-left {
-        position: fixed;
-        top: 10px;
-        left: 20px;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    #top-right {
-        position: fixed;
-        top: 10px;
-        right: 20px;
-        text-align: right;
-        font-size: 14px;
-    }
-    #footer {
-        position: fixed;
-        bottom: 10px;
-        width: 100%;
-        text-align: center;
-        font-size: 14px;
-        color: #888;
-    }
-    #start-btn {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #ff4444;
-        border: none;
-        color: white;
-        font-size: 24px;
-        padding: 20px 50px;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: transform 0.2s;
-        z-index: 10;
-    }
-    #start-btn:hover {
-        transform: translate(-50%, -50%) scale(1.1);
-    }
-</style>
-</head>
-<body>
-
-<div id="top-left">Rufine™</div>
-<div id="top-right">Recent Scores:<br><span id="scores"></span></div>
-<div id="footer">Made for amFOSS tasks</div>
-<button id="start-btn">Start Drawing</button>
-
-<canvas id="gameCanvas"></canvas>
-
-<audio id="start-sound" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg"></audio>
-<audio id="end-sound" src="https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg"></audio>
-
-<script>
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
@@ -82,8 +5,8 @@ canvas.height = window.innerHeight;
 
 let drawing = false;
 let points = [];
-const centerX = canvas.width / 2;
-const centerY = canvas.height / 2;
+let centerX = canvas.width / 2;
+let centerY = canvas.height / 2;
 
 // Draw center dot
 function drawCenterDot() {
@@ -167,8 +90,7 @@ document.getElementById('start-btn').addEventListener('click', startDrawingGame)
 window.onresize = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    centerX = canvas.width / 2;
+    centerY = canvas.height / 2;
     drawCenterDot();
 };
-</script>
-</body>
-</html>
