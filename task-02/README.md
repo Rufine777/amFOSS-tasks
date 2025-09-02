@@ -20,5 +20,5 @@ This was the most time-consuming part. Time spent on this single question was mo
 
  - This approach led to a long code, so I tried to find a shorter solution — but after wasting time, I went back to my first approach with minor optimizations. The result was still relatively long,   but it worked
 
-##Question 6: Remove card
+## Question 6: Remove card
 After reading the problem and analyzing the expected output, I realized that to minimize the number of moves (removing cards), I needed to subtract the maximum frequency of any number from the total number of cards. To find this frequency, I used the array-based counting method in C, and the rest was straightforward—I simply printed N - maxFreq.
