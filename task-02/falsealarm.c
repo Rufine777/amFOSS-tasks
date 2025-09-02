@@ -14,27 +14,27 @@ int main() {
             scanf("%d", &arr[j]);
         }
 
-        b = 0;          // button is OFF at start
-        sec = 0;        // seconds left after pressing button
-        int possible = 1; // assume YES
+        b = 0;         
+        sec = 0;        
+        int possible = 1; 
 
         for (int j = 0; j < n; j++) {
-            if (arr[j] == 1) { // closed door
-                if (b == 0) {  // first closed door -> press button
+            if (arr[j] == 1) { 
+                if (b == 0) {  
                     b = 1;
                     sec = x;
                 }
                 if (b == 1) {
                     if (sec > 0) {
-                        sec--; // pass through using button time
+                        sec--; 
                     } else {
-                        possible = 0; // button time over, door closed
+                        possible = 0; 
                         break;
                     }
                 }
-            } else { // open door
+            } else { 
                 if (b == 1 && sec > 0) {
-                    sec--; // still consuming time after button press
+                    sec--; 
                 }
             }
         }

@@ -10,16 +10,15 @@ int main() {
     for (i = 0; i < T; i++) {
         scanf("%d", &N);
 
-        int freq[11] = {0}; // acts like a dict with keys 1..10
+        int freq[11] = {0}; 
 
-        // Read numbers and store frequency directly
+        
         for (j = 0; j < N; j++) {
             int num;
             scanf("%d", &num);
             freq[num]++;
         }
 
-        // Find max frequency
         int maxFreq = 0;
         for (j = 1; j <= 10; j++) {
             if (freq[j] > maxFreq) {
