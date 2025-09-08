@@ -1,4 +1,4 @@
-#!/home/ajul/LyricLounge/LyricLounge/music_bot_env/bin/python3
+#!/home/ajul/task-06/LyricLounge/music_bot_env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
