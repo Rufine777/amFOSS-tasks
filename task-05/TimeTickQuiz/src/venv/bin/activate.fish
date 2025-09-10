@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/ajul/amfoss-tasks/task-05/TimeTickQuiz/src/venv
+set -gx VIRTUAL_ENV /home/ajul/Praveshan-2025/task-05/TimeTickQuiz/src/venv
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH
