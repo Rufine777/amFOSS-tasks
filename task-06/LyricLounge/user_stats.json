@@ -1,12 +1,15 @@
 {
   "1395441864152318193": {
-    "commands_used": 1,
-    "lyrics_searched": 0,
+    "commands_used": 11,
+    "lyrics_searched": 3,
     "tracks_searched": 0,
     "command_counts": {
-      "help": 1
+      "help": 4,
+      "stats": 3,
+      "search": 1,
+      "lyrics": 3
     },
-    "last_used": "2025-09-08T21:16:06.416485",
+    "last_used": "2025-09-10T23:15:10.551413",
     "favorite_command": "help"
   }
 }

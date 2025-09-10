@@ -43,7 +43,7 @@ async def update_stats(user_id, command):
 async def on_ready():
     print(f"Logged in as {bot.user}")
     bot.music_api = MusicAPI(discord.ClientSession(), lastfm_key=LASTFM_KEY)
-    guild = discord.Object(id=YOUR_GUILD_ID)  # replace with your guild ID
+    guild = discord.Object(id=1411434544435036172)
     bot.tree.clear_commands(guild=guild)
     await bot.tree.sync(guild=guild)
     print("Commands synced.")
