@@ -6,7 +6,7 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 ls
 cat readme
 Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
-
+'''
 
 ### Level 1 → 2  
 
