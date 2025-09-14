@@ -6,7 +6,7 @@ This site showcases my **projects, achievements, resources, and contact details*
 ---
 
 ## Features
-- ⚡ **Fast & lightweight** – Built with Hugo static site generator.  
+-  **Fast & lightweight** – Built with Hugo static site generator.  
 -  **Sections** – About Me, Projects, Resources, and Contact.  
 -  **Customizable design** – Easy to tweak layouts and styles.  
 -  **Deployed with GitHub Pages** – Free hosting, always online.  
@@ -14,8 +14,8 @@ This site showcases my **projects, achievements, resources, and contact details*
 ---
 
 ## Preview
-🔗 Live Site → **[rufine777.github.io](https://rufine777.github.io/)**  
-🔗 Repo Link → **[Rufine777.github.io](https://github.com/Rufine777/Rufine777.github.io.git)**
+ Live Site → **[rufine777.github.io](https://rufine777.github.io/)**  
+ Repo Link → **[Rufine777.github.io](https://github.com/Rufine777/Rufine777.github.io.git)**
 ---
 
 ## Tech Stack
@@ -63,7 +63,7 @@ Now visit `http://localhost:1313/` in your browser.
    git push origin main
    ```
 
-3. GitHub Pages will auto-deploy 🚀  
+3. GitHub Pages will auto-deploy 
 
 ---
 
